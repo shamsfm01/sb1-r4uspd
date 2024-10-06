@@ -1,0 +1,38 @@
+@import "variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Custom styles
+body {
+  font-family: $font-family-sans-serif;
+  background-color: $light;
+}
+
+.sidebar {
+  min-height: 100vh;
+  background-color: $dark;
+  color: $light;
+}
+
+.main-content {
+  padding: $spacer * 2;
+}
+
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.btn-primary {
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+}
+
+.table {
+  th {
+    font-weight: $font-weight-bold;
+  }
+}
+
+.chart-container {
+  height: 300px;
+}
